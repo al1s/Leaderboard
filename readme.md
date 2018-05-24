@@ -1,3 +1,10 @@
-# ReactProjectName
+# FreeCodeCamp Camper Leaderboard
 
-User Story: I can start coding simple React app using Hot Module Replacement with Gulp workflow without messing with configs.
+Learning project for [FreeCodeCamp](https://www.freecodecamp.org/challenges/build-a-camper-leaderboard)
+
+User Story: I can see a table of the freeCodeCamp campers who've earned the most brownie points in the past 30 days.
+
+User Story: I can see how many brownie points they've earned in the past 30 days, and how many they've earned total.
+
+User Story: I can toggle between sorting the list by how many brownie points they've earned in the past 30 days and by how many brownie points they've earned total.
+
