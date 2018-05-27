@@ -2,13 +2,14 @@ import { hot } from 'react-hot-loader';
 import React from 'react';
 import TableBody from './TableBody';
 import TableHeader from './TableHeader';
+import Utils from './Utils';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       header: ['Camper Name', 'Recent score', 'Alltime score', 'Last checked'],
-      body: {}
+      body: []
     };
   }
 

@@ -200,9 +200,9 @@ gulp.task('serve', ['build'], () => {
   // Слежение за стилями
   gulp.watch(dirs.srcPath + '/*.css', ['watch:style']);
   // Слежение за добавочными JS
-  // if (copiedJs.length) {
-  //   gulp.watch(copiedJs, ['watch:copy:js']);
-  // }
+  if (copiedJs.length) {
+    gulp.watch(copiedJs, ['watch:copy:js']);
+  }
   // Слежение за html
   gulp.watch([
     '*.html',
@@ -216,6 +216,6 @@ function reload(done) {
 }
 
 gulp.task('watch:img', ['copy:img'], reload);
-// gulp.task('watch:copied:js', ['copy:js'], reload);
+gulp.task('watch:copied:js', ['copy:js'], reload);
 gulp.task('watch:html', ['html'], reload);
 gulp.task('watch:style', ['style'], reload);
