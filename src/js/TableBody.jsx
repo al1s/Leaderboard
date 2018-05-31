@@ -5,9 +5,7 @@ import Row from './Row';
 const TableBody = props => {
   return (
     <div className="table__body">
-      {Object.keys(props.value)
-        .map(elm => <Row cells={props.value[elm]} />)
-        .join()}
+      {props.value.map(elm => <Row cells={elm} />)}
       ;
     </div>
   );

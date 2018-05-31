@@ -5,7 +5,9 @@ import Cell from './Cell';
 const Row = props => {
   return (
     <div className="table__row">
-      {props.cells.map(elm => <Cell value={elm} />).join()};
+      {Object.keys(props.cells).map(elm => {
+        if (elm !== 'img') return <Cell value={props.cells[elm]} />;
+      })};
     </div>
   );
 };

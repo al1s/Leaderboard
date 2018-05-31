@@ -5,7 +5,7 @@ import Cell from './Cell';
 const TableHeader = props => {
   return (
     <div className="table__header">
-      {props.value.map(elm => <Cell value={elm} />).join()};
+      {props.value.map(elm => <Cell value={elm} />)};
     </div>
   );
 };
