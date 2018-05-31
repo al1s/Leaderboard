@@ -18,6 +18,16 @@ class App extends React.Component {
     this.setState({ value: value });
   }
 
+  componentDidMount() {
+    Utils.httpReq(
+      'https://fcctop100.herokuapp.com/api/fccusers/top/alltime'
+    ).then(resp => this.setState({ body: resp }));
+    log.setLevel('debug');
+    log.debug(JSON.stringify(this.state));
+  }
+
+  componentWillUnmount() {}
+
   render() {
     return (
       <div className="app__container">
