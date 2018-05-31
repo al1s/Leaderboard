@@ -11,15 +11,34 @@ body {
   font-size: 1rem;
 }
 
-.main {
-  background-color: var(--primary-color);
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr 1fr;
-  grid-template-rows: 1fr 2fr 2fr 1fr;
-  grid-gap: 0.4rem;
+.app_container{
+  background-color: var(--neutral-color);
   height: 100vh;
   width: 100vw;
 }
+
+.app__header {}
+
+.table {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 0.2rem;
+}
+
+.table__header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.table__body {
+}
+
+.table__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.table__cell {}
 
 @media screen and (min-width: 22rem) {
   .wrapper {
@@ -36,6 +55,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  outline: 1px solid red;
 }
 
 body,
