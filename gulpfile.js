@@ -126,7 +126,7 @@ gulp.task('build', (callback) => {
   gulpSequence(
     'clean',
     ['style', 
-     'js',
+     'copy:js',
      'copy:img'],
     'html',
     callback
