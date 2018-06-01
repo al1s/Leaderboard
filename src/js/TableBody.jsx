@@ -5,7 +5,9 @@ import Row from './Row';
 const TableBody = props => {
   return (
     <div className="table__body">
-      {props.value.map(elm => <Row cells={elm} />)}
+      {props.value.map(elm => (
+        <Row key={`${elm.username}${elm.lastUpdate}`} cells={elm} />
+      ))}
       ;
     </div>
   );

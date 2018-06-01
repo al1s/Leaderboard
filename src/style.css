@@ -21,7 +21,7 @@ body {
 
 .table {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  /* grid-template-rows: 1fr 1fr; */
   grid-gap: 0.2rem;
 }
 
@@ -39,6 +39,10 @@ body {
 }
 
 .table__cell {}
+
+.table__cell img {
+  height: 70px;
+}
 
 @media screen and (min-width: 22rem) {
   .wrapper {

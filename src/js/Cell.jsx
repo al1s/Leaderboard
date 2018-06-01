@@ -4,7 +4,7 @@ import React from 'react';
 const Cell = props => {
   return (
     <div className="table__cell">
-      {JSON.stringify(props.value)}
+      {props.value}
     </div>
   );
 };
