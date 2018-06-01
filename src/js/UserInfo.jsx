@@ -4,7 +4,7 @@ import React from 'react';
 class UserInfo extends React.Component {
   constructor(props) {
     super(props);
-    log.debug(props);
+    // log.debug(props);
   }
 
   componentDidMount() {

@@ -9,6 +9,7 @@ body {
   font-family: 'Orbitron', Lato, 'PT Sans', -apple-system, BlinkMacSystemFont,
     Roboto, Ubuntu, 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
   font-size: 1rem;
+  text-align: center;
 }
 
 .app_container{
@@ -59,7 +60,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body,

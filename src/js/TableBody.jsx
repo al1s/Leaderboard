@@ -8,7 +8,6 @@ const TableBody = props => {
       {props.value.map(elm => (
         <Row key={`${elm.username}${elm.lastUpdate}`} cells={elm} />
       ))}
-      ;
     </div>
   );
 };

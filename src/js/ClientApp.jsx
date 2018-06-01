@@ -8,7 +8,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      header: ['Camper Name', 'Recent score', 'Alltime score', 'Last checked'],
+      header: ['Camper Name', 'Alltime score', 'Recent score', 'Last update'],
       body: []
     };
   }
