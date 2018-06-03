@@ -19,9 +19,11 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    Utils.httpReq(
-      'https://fcctop100.herokuapp.com/api/fccusers/top/alltime'
-    ).then(resp => this.setState({ body: resp }));
+    // Utils.httpReq(
+    //   'https://fcctop100.herokuapp.com/api/fccusers/top/alltime'
+    // ).then(resp => this.setState({ body: resp }));
+    let data = Utils.localReq();
+    this.setState({ body: data });
     log.setLevel('debug');
   }
 

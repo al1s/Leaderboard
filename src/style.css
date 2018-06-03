@@ -1,11 +1,12 @@
 :root {
-  --primary-color: #222222;
-  --secondary-color: #ece7ee;
-  --neutral-color: #fbecda;
+  --primary-color: #6899d3;
+  --secondary-color-A: #7c71d8;
+  --secondary-color-B: #5fd3b3;
+  --additional-color: #ffc973;
 }
 
 body {
-  background-color: var(--neutral-color);
+  background-color: var(--primary-color);
   font-family: 'Orbitron', Lato, 'PT Sans', -apple-system, BlinkMacSystemFont,
     Roboto, Ubuntu, 'Droid Sans', 'Helvetica Neue', Arial, sans-serif;
   font-size: 1rem;
@@ -13,7 +14,7 @@ body {
 }
 
 .app_container{
-  background-color: var(--neutral-color);
+  background-color: var(--primary-color);
   height: 100vh;
   width: 100vw;
 }
@@ -27,6 +28,10 @@ body {
 }
 
 .table__header {
+  background-color: var(--secondary-color-B);
+  font-size: 1.3rem;
+  height: 3rem;
+  font-weight: 900;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -35,17 +40,42 @@ body {
 }
 
 .table__row {
+  align-items: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
+.table__row:nth-child(even) {
+  background-color: var(--secondary-color-B);
+}
+
+.table__row:nth-child(odd) {
+  background-color: var(--secondary-color-A);
+}
+
 .table__cell {}
 
-.table__cell img {
+.user {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0.6rem;
+  text-align: left;
+}
+
+.user__img {
   height: 70px;
+  padding-right: 0.6rem;
+}
+
+.user__name {
+  align-self: center;
 }
 
 @media screen and (min-width: 22rem) {
+  .table {
+    margin: 0px auto;
+    width: 80vw;
+  }
   .wrapper {
     width: 70%;
   }

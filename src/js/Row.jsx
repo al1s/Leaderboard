@@ -19,7 +19,7 @@ class Row extends React.Component {
         {[
           <UserInfo key={this.userData[1]} value={this.userData} />,
           this.activityData.map(elm => <Cell key={elm} value={elm} />),
-          <DateComponent value={this.lastUpdate} />
+          <DateComponent key={this.lastUpdate} value={this.lastUpdate} />
         ]}
       </div>
     );

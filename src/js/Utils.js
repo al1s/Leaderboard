@@ -1,3 +1,5 @@
+import data from './data.json';
+
 const Utils = {
   to(promise) {
     return promise
@@ -14,6 +16,10 @@ const Utils = {
       [err, resp] = await this.to(resp.json());
       return resp;
     } else log.debug(JSON.stringify(err));
+  },
+
+  localReq() {
+    return data;
   }
 };
 

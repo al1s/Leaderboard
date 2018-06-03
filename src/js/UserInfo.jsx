@@ -13,13 +13,13 @@ class UserInfo extends React.Component {
 
   render() {
     return (
-      <div className="table__cell">
-        <img src={this.props.value[1]} alt="" />
-        <div>
+      <div className="table__cell  user">
+        <img className="user__img" src={this.props.value[1]} alt="" />
+        <span className="user__name">
           <a href={`https://www.freecodecamp.com/${this.props.value[0]}`}>
             {this.props.value[0]}
           </a>
-        </div>
+        </span>
       </div>
     );
   }
